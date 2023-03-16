@@ -8,7 +8,7 @@ form.addEventListener("submit", function (event) {
   const formData = {
     name: name.value,
     email: email.value,
-    message: message.value
+    message: message.value,
   };
 
   let no_data = true;
@@ -20,31 +20,31 @@ form.addEventListener("submit", function (event) {
   ) {
     no_data = false;
 
-  console.group("*******Contact Me*******");
-  if (formData.username !== "") {
-    console.log("Name:", formData.name);
-  } else {
-    console.log("Name:", "no submission");
+    console.group("*******Contact Me*******");
+    if (formData.username !== "") {
+      console.log("Name:", formData.name);
+    } else {
+      console.log("Name:", "no submission");
+    }
+
+    if (formData.email !== "") {
+      console.log("Email:", formData.email);
+    } else {
+      console.log("Email:", "no submission");
+    }
+
+    if (formData.email !== "") {
+      console.log("Message:", formData.message);
+    } else {
+      console.log("Message:", "no submission");
+    }
+
+    console.groupEnd();
+  }
+  if (no_data) {
+    console.log("You must enter some data to submit this form.");
   }
 
-  if (formData.email !== "") {
-    console.log("Email:", formData.email);
-  } else {
-    console.log("Email:", "no submission");
-  }
-
-  if (formData.email !== "") {
-    console.log("Message:", formData.message);
-  } else {
-    console.log("Message:", "no submission");
-  }
-
-  console.groupEnd();
-}
-if (no_data) {
-  console.log("You must enter some data to submit this form.");
-}
-
-alert("Message sent. Thank you!");
-form.reset();
+  alert("Message sent. Thank you!");
+  form.reset();
 });
