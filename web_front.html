@@ -6,7 +6,10 @@
     <title>My Professional Website</title>
     <script defer src="web_js.js"></script>
     <link rel="stylesheet" href="web_style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <div id="header">
@@ -15,7 +18,7 @@
           <li><a href="#about-sec">About</a></li>
           <li><a href="#previous-work">Previous Work</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div id="about-sec" class="about">
@@ -83,26 +86,95 @@
         <div class="container">
           <div class="row">
             <div class="pro-col-1">
-              <img src="/images/pro.png" alt="Project 1">
+              <img src="/images/pro.png" alt="Project 1" />
             </div>
             <div class="pro-col-2">
               <div class="project-list">
                 <h1 class="sub-title">Projects</h1>
                 <div class="project-item">
                   <div class="project-title">Vulgar Tweet Classification</div>
-                  <div class="project-desc">It is a label project based on machine learning to develop a model that can identify vulgar tweets containing profanity and other offensive language.</div>
-                  <a href="https://github.com/queoui/VulgarTweetIdentification" class="project-link" >View on GitHub</a>
+                  <div class="project-desc">
+                    It is a label project based on machine learning to develop a
+                    model that can identify vulgar tweets containing profanity
+                    and other offensive language.
+                  </div>
+                  <a
+                    href="https://github.com/queoui/VulgarTweetIdentification"
+                    class="project-link"
+                    >View on GitHub</a
+                  >
                 </div>
                 <div class="project-item">
-                  <div class="project-title">Handwritten Text Digitalization</div>
-                  <div class="project-desc">CNN model to convert cursive handwritten text to digital text, which can then be edited. </div>
-                  <a href="https://github.com/mahathi0412/Handwritten-text-digitalization" class="project-link" >View on GitHub</a>
+                  <div class="project-title">
+                    Handwritten Text Digitalization
+                  </div>
+                  <div class="project-desc">
+                    CNN model to convert cursive handwritten text to digital
+                    text, which can then be edited.
+                  </div>
+                  <a
+                    href="https://github.com/mahathi0412/Handwritten-text-digitalization"
+                    class="project-link"
+                    >View on GitHub</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>       
+      <div id="contact" class="contact-me">
+        <div class="container">
+          <div class="row">
+            <div class="cont-col-1">
+              <h1 class="sub-title">Contact me</h1>
+              <form id="contact-form" method="post" action="#">
+                <div class="form-label">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="input-element"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="form-label">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    class="input-element"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-label">
+                  <label for="message">Message:</label>
+                  <textarea
+                    class="input-element"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/mahathi0412" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/your-username/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
